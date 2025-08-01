@@ -1,6 +1,5 @@
 name: Cypress petlove e2e Tests
-on: 
-  workflow_dispatch:
+on: [push]
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
