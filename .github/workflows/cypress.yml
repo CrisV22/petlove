@@ -1,7 +1,7 @@
 name: Cypress petlove e2e Tests
 # on: [push]
 # Adicionando dispatch
-on: 
+on:
   workflow_dispatch:
 jobs:
   cypress-run:
