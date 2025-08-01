@@ -1,4 +1,4 @@
-name: Cypress e2e Tests
+name: Cypress petlove e2e Tests
 on: [push]
 jobs:
   cypress-run:
@@ -10,7 +10,7 @@ jobs:
       # Se o teste falhar em uma instância, todas as outras instâncias falharam
       fail-fast: false # https://github.com/cypress-io/github-action/issues/48
       matrix:
-        containers: [1, 2] # Uses 2 parallel instances.
+        containers: [1, 2] # Uses 2 parallel instances
     steps:
       - name: Checkout
         uses: actions/checkout@v4
