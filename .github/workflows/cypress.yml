@@ -3,6 +3,8 @@ name: Cypress petlove e2e Tests
 # Adicionando dispatch
 on:
   workflow_dispatch:
+    inputs:
+      default: 'main'
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
