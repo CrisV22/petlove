@@ -42,7 +42,7 @@ jobs:
           parallel: true # Runs test in parallel using settings above
           
           # Executa todos os testes em spec podendo ser, todos regressão, mais ríticos smoke.
-          spec: $({ github.event.inputs.spec})
+          spec: ${{ github.event.inputs.spec }}
         env:
           # For recording and parallelization to work you must set your CYPRESS_RECORD_KEY
           # in GitHub repo → Settings → Secrets → Actions
